@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndorePlant</title>
+
     <!-- favicon icon  -->
     <link rel="shortcut icon" href="images/img/favicon.ico" type="image/x-icon">
 
@@ -16,12 +17,13 @@
 </head>
 
 <body>
-    <header id="header" class="bg-green-950 fixed w-full top-0 left-0 z-50">
-        <nav class="container flex items-center justify-between   mx-auto h-16 sm:h-20">
+    <header id="header" class="bg-green-950 fixed w-full top-0 left-0 z-50  ">
+        <nav class="container flex items-center justify-between   mx-auto h-14 sm:h-16">
             <div class="font-lobster sm:text-2xl cursor-pointer duration-300">IndorePlant.</div>
-            <div id="nav-menu"
-                class="absolute  top-0 left-[-100%] min-h-[80vh]  w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static">
-                <ul class="flex flex-col items-center gap-8 lg:flex-row lg:ms-auto lg:pe-20">
+            <div id="nav-menu" class="absolute  top-0 left-[-100%] min-h-[80vh] lg:min-h-[60px] 
+                 w-full bg-green-950/80 backdrop-blur-sm flex items-center
+                 justify-center duration-300 overflow-hidden lg:static   lg:bg-transparent">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row lg:ms-auto lg:pe-20 ">
                     <li>
                         <a href="#home" class="nav-link">Home</a>
                     </li>
@@ -49,6 +51,76 @@
 
         </nav>
     </header>
+    <main>
+        <!-- home -->
+
+        <section id="home" class="-top-5">
+            <div class="container mx-auto">
+
+                <!-- blob -->
+                 <div class="w-64 h-64 bg-green-700 opacity-70 rounded-full blur-3xl absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+
+                 </div>
+
+                 <!-- blob -->
+                 <div class="w-64 h-64 bg-red-700 opacity-30 rounded-full blur-3xl absolute -z-10 right-0 bottom-0 ">
+
+                 </div>
+                
+                 <div class="flex flex-col  items-center gap-5 lg:flex-row">
+                    <!-- content  -->
+                    <div class="w-full gap-y-5 flex flex-col gap-5 lg:w-1/2">
+                        <h1 >
+                            <span class="text-yellow-500">Plants </span>make a <br>
+                            positive <span class="text-yellow-500">impact</span> on <br> your environment
+                        </h1>
+                        <p class="text-slate-300 font-lobster tracking-wider ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur quam expedita
+                            nemo quibusdam dolorum ab aut quis nulla ratione?
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 md:gap-6 lg:pt-5 xl:pt-10">
+                            <button class="btn">
+                                <span>Shop Now</span>
+                                <i class="ri-leaf-line"></i>
+                            </button>
+                            <button class="btn btn-outline">
+                                <span>Know more</span>
+                                <i class="ri-leaf-fill"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs font-lobster tracking-wider text-slate-300">
+                            you will get 30-days free trial.
+                        </p>
+                        <div class="flex items-center gap-5 [&>i]:text-slate-300 [&>i]:cursor-pointer lg:pt-10">
+                            <i class="ri-facebook-line hover:text-yellow-500 duration-300 text-md lg:text-xl"></i>
+                            <i class="ri-twitter-x-fill hover:text-yellow-500 duration-300 text-md lg:text-xl"></i>
+                            <i class="ri-instagram-line hover:text-yellow-500 duration-300 text-md lg:text-xl"></i>
+                            <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 text-md lg:text-xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- image -->
+                     <div class="w-full relative lg:w-1/2">
+                        <img src="images/img/home.png" alt="">
+                        <!-- leaf  -->
+                        <div class="absolute lg:-top-8  lg:right-5 opacity-30 top-0 right-0 text-yellow-500 animMoveY">
+                            <i class="ri-leaf-line text-6xl "></i>
+                        </div>
+                        <!-- flower  -->
+                        <div class="absolute bottom-0 left-0 lg:bottom-20 lg:left-2 opacity-30 animWave delay-75">
+                            <i class="ri-flower-line text-6xl text-yellow-500"></i>
+                        </div>
+                        <!-- plant -->
+                        <div class="hidden absolute -top-10 -left-10 lg:-top-10 lg:block rotate">
+                            <i class="ri-plant-line text-6xl text-yellow-500 opacity-30"></i>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
     <!-- java script file -->
