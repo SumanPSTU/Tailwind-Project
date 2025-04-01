@@ -67,11 +67,14 @@
 @layer utilities {
   .font-lobster {
     font-family: 'Lobster', sans-serif;
-
+    
   }
 
   .font-jost {
     font-family: 'Jost', sans-serif;
+  }
+  .swiper-pagination-bullet{
+    @apply bg-green-500 w-4 h-4;
   }
 
   @keyframes moveY {
